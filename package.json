@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "author": {
+    "name": "Oleh Zahnitko"
+  },
+  "bugs": {
+    "url": "https://github.com/radiosource/mongozavr/issues"
+  },
+  "dependencies": {
+    "mongodb": "3.5.2"
+  },
+  "deprecated": false,
+  "description": "Simple client for mongodb",
+  "devDependencies": {},
+  "homepage": "https://github.com/radiosource/mongozavr/",
+  "keywords": [
+    "mongodb",
+    "driver",
+    "promise"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "monozavr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiosource/mongozavr/"
+  },
+  "scripts": {}
+}
