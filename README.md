@@ -1,4 +1,4 @@
-# downloader
+# mongozavr
 Simple client for mongodb
 ## Installing
 
