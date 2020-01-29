@@ -128,3 +128,4 @@ class Mongozavr {
 }
 
 module.exports = Mongozavr;
+module.exports.default = Mongozavr;
