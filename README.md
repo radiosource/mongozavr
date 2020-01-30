@@ -35,6 +35,7 @@ await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {"fo
 ##### static getRandomId() - returns random mongodb ObjectId
 ##### insert(collection, documents)
 ##### find(collection, [searchParams], [options])
+##### findOne(collection, [searchParams], [options])
 ##### count(collection, [searchParams], [options])
 ##### remove(collection, searchParams, [options])
 ##### removeOne(collection, searchParams, [options])
