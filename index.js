@@ -102,6 +102,15 @@ class Mongozavr {
     });
   }
 
+  bulkInsert(collection, documents){
+    if(!documents) throw Error('Empty documents list for inserting!')
+    return this.connection.then(db => {
+      const bulk = db.collection(collection).initializeUnorderedBulkOp();
+      documents.forEach(doc => bulk.insert(doc));
+      return bulk.execute();
+    });
+  }
+
   _handleResult(resolve, reject) {
     return (err, result) => err ? reject(err) : resolve(result);
   }
@@ -128,6 +137,7 @@ class Mongozavr {
     this.updateOne = this.updateOne.bind(this, collectionName);
     this.remove = this.remove.bind(this, collectionName);
     this.removeOne = this.removeOne.bind(this, collectionName);
+    this.bulkInsert = this.bulkInsert.bind(this, collectionName);
   }
 
 }
