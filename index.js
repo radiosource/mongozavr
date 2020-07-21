@@ -127,7 +127,6 @@ class Mongozavr {
 
   _bindCollection(collectionName) {
     this.find = this.find.bind(this, collectionName);
-    this.findOne = this.findOne.bind(this, collectionName);
     this.count = this.count.bind(this, collectionName);
     this.insert = this.insert.bind(this, collectionName);
     this.updateOne = this.updateOne.bind(this, collectionName);
