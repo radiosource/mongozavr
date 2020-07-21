@@ -3,10 +3,6 @@ const ObjectID = require("mongodb").ObjectID;
 const AVAILABLE_OPTIONS = ["limit", "skip", "sort", "project"];
 
 class Mongozavr {
-  client;
-  connection;
-  db;
-  url;
 
   static getRandomId() {
     return new ObjectID();
