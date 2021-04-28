@@ -33,7 +33,7 @@ await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {"fo
 ##### updateOne example
 ```js
 const Mongo = require("mongozavr");
-await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {$set:{"foo": "bar"}, $push: {"someArrayField":"some item"}});
+await mongo.updateOne('someCollectionName', {_id, "5e318aa8473d790943408095"}, {$set:{"foo": "bar"}, $push: {"someArrayField":"some item"}});
 ```
 
 ## API
@@ -47,4 +47,6 @@ await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {$se
 ##### removeOne(collection, searchParams, [options])
 ##### update(collection, searchParams, updateParams, [options])
 ##### updateOne(collection, searchParams, updateParams, [options])
+##### replace(collection, searchParams, updateParams, [options])
+##### replaceOne(collection, searchParams, updateParams, [options])
 
