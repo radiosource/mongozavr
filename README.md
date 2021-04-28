@@ -30,6 +30,12 @@ await mongo.find('someCollectionName', {_id, "5e318aa8473d790943408095"});
 await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {"foo": "bar"});
 ```
 
+##### updateOne example
+```js
+const Mongo = require("mongozavr");
+await mongo.update('someCollectionName', {_id, "5e318aa8473d790943408095"}, {$set:{"foo": "bar"}, $push: {"someArrayField":"some item"}});
+```
+
 ## API
 
 ##### static getRandomId() - returns random mongodb ObjectId
